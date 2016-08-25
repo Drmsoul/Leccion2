@@ -15,24 +15,36 @@
         android:text="Hello World!"
         android:layout_marginTop="122dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start"
-        android:id="@+id/button"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:onClick="startService" />
+        android:id="@+id/textView" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="End "
+        android:text="1"
+        android:id="@+id/button"
+        android:onClick="startService"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
         android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginTop="51dp"
-        android:onClick="stopService" />
+        android:onClick="stopService"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/button3"
+        android:onClick="stopService"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
 </RelativeLayout>
